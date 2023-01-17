@@ -1,0 +1,29 @@
+{%extends 'home.html' %}
+{%block home%}
+<h1 class="bg-info.display-4 text-center text-warning">LOGIN</h1>
+{%if messages%}
+{%for mesg in messages%}
+{%if msg.level == DEFAULT_MESSAGE_LEVELS.SUCCESS%}
+<div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>{{msg}}</strong>
+</div>
+{%endif%}
+    
+{%if msg.level == DEFAULT_MESSAGE_LEVELS.ERROR%}
+<div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>{{msg}}</strong>
+</div>
+{%endif%}
+{%endfor%}
+{%endif%}
+<form action="" method="post" class="text-center">
+<table>
+    {{form.as_table}}
+    {%csrf_token%}
+</table>
+    <button class="btn btn-success">LOGIN</button>
+</form>
+
+{%endblock home%}

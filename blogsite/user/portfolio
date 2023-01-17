@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <header style="position: sticky;background-color: white; top: 0px; box-shadow: 2PX 2PX 2PX 1PX grey; padding: 0px;">
+        <h1 style="text-align:centre ;">PORTFOLIO</h1>
+        
+    </header>
+    <div style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; 
+    background-image: url(cropped-plush-design-studio-q10VITrVYUM-unsplash-scaled-2.jpg);box-shadow: 5px 5px 5px 1px grey; 
+    background-attachment: scroll; background-repeat: no-repeat;background-size: 100% ;position: sticky;">
+        <br>
+        <br><br><br><br><br><br><br><br>
+        
+        <h1>Shakkir K</h1>
+        <br><br><br><br><br>
+        <br><br>
+
+    </div>
+    <br>
+    <img align="right" src="0 (2).jpg" alt="error" width="150"height="200" >
+       
+    <br><br>
+    
+    <hr>
+    <h3 >About Me</h3>
+    <hr>
+    <br>
+    <div>
+        <ul style="list-style-type:none;font-size: large;">
+            <li>Name: Shakkir K</li>
+            <li>Profile: Software Engineer</li>
+            <li>Education: B.Tech In Electronics and Communication Engineering</li>
+            <li>Phone: +917902903296</li>
+            <li>Freelance: Available</li>
+            <li>Email: shakkir22@gmail.com</li>
+
+        </ul>
+
+    </div>
+    <br><br>
+    <p style="font-size:20px ;padding: 30px;">Hi, I'm Shakkir, and I graduated from Government Engineering College,Kozhikode, Chemperi under APJ Abdul Kalam Technological University with a
+         bachelors degree in Electronics & Communication. My interests are in full stack web development,
+          and I love to create beautiful and performant products with delightful user experiences.</p>
+    <p style="font-size: 20px;padding: 30px;"> My final year project was OBSTACLES AND CRACK DETECTION.</p>
+    <br>
+    <div style="padding: 20px; font-size: 20px;" >
+        <h2 style="font-size:100px ;">EDUCATION</h2>
+        <hr>
+        <ul>
+            <li >Graduation (2018 to 2022)</li>
+            <br>
+            <ul>
+                <li style="list-style-type:none ;">Completed B.Tech in Electronics & Communication Engineerinf from Government Engineering Cpllege,Kozhikode</li>
+            </ul>
+            <br>
+        </ul>
+        
+        <ul>
+            <li >Internship in Python Django FullStack Web Development (2022 September to 2022 September)</li>
+            <br>
+            <ul>
+                <li style="list-style-type:none ;">Completed my First Internship in Python with Flask as Framework from Riss Technologies where i was thought only basics of web Development and did a Mega project on flask on an Employee Management System</li>
+            </ul>
+            <br>
+        </ul>
+
+    </div>
+ 
+    <hr>
+
+</body>
+</head>

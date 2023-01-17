@@ -1,0 +1,44 @@
+{%extends 'uhome.html'%}
+{%block user%}
+<h1 class="bg-info text-light text-center">My Blogs</h1>
+<div class="col-8">                     
+    {%for i in data%}
+    <div class="card mt-3 bg-light">
+      {%if i.image%}
+      <img src="{{i.image.url}}" alt="blog-image">
+      {%endif%}
+      <div class="card-body">
+        <p class="text-right">Posted by:{{i.auther.first_name}}{{i.auther.last_name}}</p>
+        <h1 class="card-title">{{i.title}}</h1>
+        <div class="card-content">
+          {{i.content}}
+        </div>
+        <p>Posted on:{{i.date}}</p>
+      </div>
+      <div class="card-footer">
+      <button data-toggle="collapse" class="btn btn-info btn-block"  data-target="#demo{{i.id}}">Comments</button>
+      <a href="{%url 'add-like' i.id%}" class="class btn btn-outline-success btn-block"><span class="material-symbols-outlined">
+        thumb_up
+        </span>
+      <span class="badge badge-danger">{{i.liked_count}}</span></a>
+      </div>
+      <div id="demo{{i.id}}" class="collapse jumbotron fade">
+        <form action="{%url 'add-cmnt' i.id%}" method="post">
+        {%csrf_token%}
+      {{comment.as_p}}
+      <p><button class="btn btn_success">Add Comment</button></p></form>
+        <div>
+        <h5>Comments</h5>
+      {%for c in cmnts%}
+        {%if c.blog.id == i.id%}
+        <ul class="list-group">
+          <li class="list-group-item"><b>{{c.user}}:</b>{{c.comment}}</li>
+        </ul>
+        {%endif%}
+      {%endfor%}
+      </div>
+      </div>
+    </div>
+    {%endfor%}
+  </div>
+{%endblock user%}
